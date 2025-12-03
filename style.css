@@ -1,73 +1,28 @@
 header,
 nav,
+body,
 main,
 footer {
-  border: 1px solid rgb(0, 0, 0);
+  font-family: Helvetica, sans-serif;
 }
 
-nav {
-  background-color: rgb(187, 55, 55);
-  margin-right: 400px;
-  padding-inline: 2rem;
-}
-
-nav > ul {
-  list-style: none;
+.navigation {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-nav > ul > li {
-  margin: 0;
-}
-
-header {
   display: flex;
-  flex-direction: row;
+  background-color: rgb(220, 22, 22);
   justify-content: space-between;
-  align-items: center;
+  padding-inline: 16px;
 }
 
-.flex-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  align-items: normal;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-}
-
-.flex-wrapper > div {
-  flex-grosw: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-.flex-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  align-items: normal;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-}
-
-.flex-wrapper > div {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-footer {
-  text-align: center;
-  font-size: 0.8rem;
-  color: rgb(220, 22, 22);
-}
-footer a {
-  color: rgb(197, 45, 45);
+.nav-item {
+  color: white;
+  padding: 14px 20px;
   text-decoration: none;
+  cursor: pointer;
 }
-footer a:hover {
-  text-decoration: underline;
-}
+
 .flex-wrapper {
   display: flex;
   flex-direction: row;
@@ -81,4 +36,31 @@ footer a:hover {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(220, 22, 22);
+}
+
+footer a {
+  color: rgb(220, 22, 22);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.ajax-logo {
+  width: 15%;
+  height: auto;
 }
