@@ -5,7 +5,9 @@ main,
 footer {
   font-family: Helvetica, sans-serif;
 }
-
+main {
+  font-family: Helvetica, sans-serif;
+}
 .navigation {
   list-style-type: none;
   margin: 0;
