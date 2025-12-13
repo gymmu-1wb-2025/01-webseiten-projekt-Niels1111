@@ -1,0 +1,68 @@
+header,
+nav,
+body,
+main,
+footer {
+  font-family: Helvetica, sans-serif;
+}
+main {
+  font-family: Helvetica, sans-serif;
+}
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: rgb(220, 22, 22);
+  justify-content: space-between;
+  padding-inline: 16px;
+}
+
+.nav-item {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.flex-wrapper > div {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(220, 22, 22);
+}
+
+footer a {
+  color: rgb(220, 22, 22);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.ajax-logo {
+  width: 15%;
+  height: auto;
+}
