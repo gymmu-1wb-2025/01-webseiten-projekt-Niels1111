@@ -7,6 +7,7 @@ footer {
 }
 main {
   font-family: Helvetica, sans-serif;
+  padding: 1rem;
 }
 .navigation {
   list-style-type: none;
@@ -65,4 +66,47 @@ header {
 .ajax-logo {
   width: 15%;
   height: auto;
+}
+
+section {
+  margin-bottom: 10px;
+}
+
+.icon-btn {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.icon-btn:hover {
+  color: red;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  color: rgb(255, 255, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-item:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(220, 22, 22);
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
 }
