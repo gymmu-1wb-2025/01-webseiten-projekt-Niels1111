@@ -110,3 +110,26 @@ html {
     display: none;
   }
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 998; /* Damit der Header über dem text liegt */
+  background-color: white; /* optional, damit Inhalt nicht durchscheint */
+}
+
+nav {
+  position: fixed;
+  top: 130px; /* Höhe des Headers anpassen, falls nötig */
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgb(220, 22, 22);
+}
+
+/* Damit der Inhalt nicht unter Header und Nav verschwindet */
+main {
+  margin-top: 140px; /* Summe der Höhe von Header + Nav anpassen */
+  overflow-y: auto; /* ermöglicht Scrollen im Inhalt */
+}
