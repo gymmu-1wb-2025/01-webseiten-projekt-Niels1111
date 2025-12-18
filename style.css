@@ -130,6 +130,6 @@ nav {
 
 /* Damit der Inhalt nicht unter Header und Nav verschwindet */
 main {
-  margin-top: 140px; /* Summe der Höhe von Header + Nav anpassen */
+  margin-top: 200px; /* Summe der Höhe von Header + Nav anpassen */
   overflow-y: auto; /* ermöglicht Scrollen im Inhalt */
 }
