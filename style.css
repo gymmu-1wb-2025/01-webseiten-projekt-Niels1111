@@ -1,66 +1,44 @@
-header,
-nav,
-body,
-main,
-footer {
-  font-family: Helvetica, sans-serif;
+/* ============================= */
+/* GRUNDEINSTELLUNGEN (LIGHT) */
+/* ============================= */
+
+* {
+  box-sizing: border-box;
 }
-main {
-  font-family: Helvetica, sans-serif;
-  padding: 1rem;
-}
-.navigation {
-  list-style-type: none;
+
+html,
+body {
+  height: 100%;
   margin: 0;
-  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
   display: flex;
-  background-color: rgb(220, 22, 22);
-  justify-content: space-between;
-  padding-inline: 16px;
+  flex-direction: column;
+  overflow: hidden; /* Body scrollt NICHT */
+  background-color: white; /* LIGHT MODE */
+  color: black;
 }
 
-.nav-item {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.flex-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-}
-
-.flex-wrapper > div {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.8rem;
-  color: rgb(220, 22, 22);
-}
-
-footer a {
-  color: rgb(220, 22, 22);
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
+/* ============================= */
+/* HEADER */
+/* ============================= */
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 130px;
+  width: 100%;
+  background-color: white; /* LIGHT */
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0 16px;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
 }
 
 .ajax-logo {
@@ -68,104 +46,137 @@ header {
   height: auto;
 }
 
-section {
-  margin-bottom: 10px;
+/* Dark-Mode-Button */
+#darkModeBtn {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
-.icon-btn {
-  color: #000000;
+/* ============================= */
+/* NAVIGATION */
+/* ============================= */
+
+nav {
+  position: fixed;
+  top: 130px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(220, 22, 22); /* Ajax Rot */
+  z-index: 999;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0 16px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 5px;
+  align-items: center;
 }
 
-.icon-btn:hover {
-  color: rgb(255, 255, 255);
-}
-
-.icon-btn {
-  background: none;
-  border: none;
-  color: #ffffff;
+.nav-item {
+  color: white;
+  padding: 14px 20px;
   cursor: pointer;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .nav-item:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   color: rgb(220, 22, 22);
   transition: 0.3s;
 }
+
+/* Icon Buttons */
+.icon-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* MAIN (EINZIGER SCROLLBEREICH) */
+/* ============================= */
+
+main {
+  margin-top: 200px; /* Header + Nav */
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  background-color: #f5f5f5; /* LIGHT */
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+  height: 40px;
+  background-color: #eee; /* LIGHT */
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* ============================= */
+/* DARK MODE */
+/* ============================= */
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+/* Header Dark */
+body.dark header {
+  background-color: #1e1e1e;
+  color: white;
+  border-bottom: 1px solid #333;
+}
+
+/* Button Dark */
+body.dark #darkModeBtn {
+  background-color: #333;
+  color: white;
+  border-color: #555;
+}
+
+/* Navigation Dark */
+body.dark nav {
+  background-color: #8b0000;
+}
+
+/* Navigation Text */
+body.dark .nav-item {
+  color: white;
+}
+
+/* Main Dark */
+body.dark main {
+  background-color: #181818;
+  color: #e0e0e0;
+}
+
+/* Footer Dark */
+body.dark footer {
+  background-color: #1e1e1e;
+  color: white;
+  border-top: 1px solid #333;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
 
 @media (max-width: 768px) {
   .sidebar {
     display: none;
   }
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 998; /* Damit der Header über dem text liegt */
-  background-color: white; /* optional, damit Inhalt nicht durchscheint */
-}
-
-nav {
-  position: fixed;
-  top: 130px; /* Höhe des Headers anpassen, falls nötig */
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: rgb(220, 22, 22);
-}
-
-/* Damit der Inhalt nicht unter Header und Nav verschwindet */
-main {
-  margin-top: 200px; /* Summe der Höhe von Header + Nav anpassen */
-  overflow-y: auto; /* ermöglicht Scrollen im Inhalt */
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden; /* verhindert Body-Scroll */
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  height: 130px;
-  background: #333;
-  color: white;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  flex-shrink: 0;
-}
-
-main {
-  flex: 1; /* nimmt restlichen Platz ein */
-  overflow-y: auto; /* NUR hier scrollen */
-  padding: 16px;
-  background: #f5f5f5;
-}
-
-footer {
-  height: 50px;
-  background: #222;
-  color: white;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  flex-shrink: 0;
 }
