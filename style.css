@@ -91,10 +91,6 @@ section {
   cursor: pointer;
 }
 
-.icon-btn:hover {
-  color: rgb(255, 255, 255);
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -110,6 +106,7 @@ html {
     display: none;
   }
 }
+
 header {
   position: fixed;
   top: 0;
