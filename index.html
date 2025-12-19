@@ -1,41 +1,217 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eigene Webseite</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eigene Webseite</title>
 
-    <link rel="stylesheet" href="style.css">
-  </head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
 
-  <body>
-    <header>
-      <h1>Webseite von ...</h1>
-    </header>
+<body>
+  <header>
+    <h1>Webseite über AJAX von Niels</h1>
+    <button id="darkModeBtn">Dark Mode</button>
+    <img class="ajax-logo" src="images/Ajax-Logo2.png">
+  </header>
+
+    <nav>
+      <ul class="navigation">
+        <a href="#Titel 1" class="icon-btn">
+          <button type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3L3 21H21L12 3Z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+        </a>
+        <div class="nav-item">Geschichte</div>
+
+        <a href="#Titel 2" class="icon-btn">
+          <button type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+        </a>
+        <div class="nav-item">Erfolg</div>
+
+        <a href="#Titel 3" class="icon-btn">
+          <button type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+        </a>
+        <div class="nav-item">Aktuelle Mannschaft</div>
+
+        <a href="#Titel 4" class="icon-btn">
+          <button type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="5" y="5" width="14" height="14" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+        </a>
+        <div class="nav-item">Stadion</div>
+      </ul>
+    </nav>
 
     <main>
-      <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
-      </section>
+
+      <p>
+        <h2 id="Titel 1">Die Geschichte von AJAX Amsterdam</h2>
+        Ajax Amsterdam, offiziell AFC Ajax, ist einer der bekanntesten und
+        erfolgreichsten Fußballvereine der Welt. Der Verein wurde am 18. März
+        1900 in der niederländischen Hauptstadt Amsterdam gegründet und ist bis
+        heute ein wichtiger Teil der niederländischen Fußballgeschichte.
+      </p>
+      <p>
+        Schon früh machte sich Ajax einen Namen im nationalen Fußball. Besonders
+        erfolgreich wurde der Verein jedoch ab den 1960er- und 1970er-Jahren. In
+        dieser Zeit entwickelte Ajax den berühmten Spielstil des „Totalen
+        Fußballs“. Dabei konnten Spieler flexibel ihre Positionen wechseln, was
+        das Spiel sehr schnell und kreativ machte. Einer der bekanntesten
+        Spieler dieser Ära war Johan Cruyff, der als einer der besten Fußballer
+        aller Zeiten gilt.
+      </p>
+      <p>
+        Zwischen 1971 und 1973 gewann Ajax dreimal in Folge den Europapokal der
+        Landesmeister (heute UEFA Champions League). Diese Erfolge machten den
+        Verein international berühmt und prägten den modernen Fußball
+        nachhaltig.
+      </p>
+      <p>
+        Auch in den folgenden Jahrzehnten blieb Ajax erfolgreich. Ein weiteres
+        Highlight war der Champions-League-Sieg 1995, als eine sehr junge
+        Mannschaft unter Trainer Louis van Gaal den Titel gewann. Ajax ist
+        bekannt dafür, junge Talente aus der eigenen Jugendakademie auszubilden.
+        Viele weltberühmte Spieler wie Dennis Bergkamp, Marco van Basten oder
+        Matthijs de Ligt begannen ihre Karriere bei Ajax.
+      </p>
+      <p>
+        Heute spielt Ajax im Johan-Cruyff-Arena-Stadion und ist Rekordmeister
+        der niederländischen Eredivisie. Der Verein steht bis heute für
+        attraktiven Offensivfußball, Nachwuchsförderung und eine lange,
+        erfolgreiche Tradition.
+      </p>
 
       <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
-
-      <section>
-        <h2>Unterseiten verlinken</h2>
+        <h2 id="Titel 2">Die Erfolge von AJAX</h2>
         <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/hobbies.html">Hobbies</a>.
+          Ajax Amsterdam gehört zu den erfolgreichsten und traditionsreichsten
+          Fußballvereinen Europas. Seit seiner Gründung im Jahr 1900 hat der
+          Verein zahlreiche nationale und internationale Titel gewonnen und sich
+          einen festen Platz in der Fußballgeschichte gesichert. Durch
+          konstanten sportlichen Erfolg, attraktiven Spielstil und eine starke
+          Nachwuchsarbeit zählt Ajax bis heute zu den größten Klubs des
+          europäischen Fußballs.
+        </p>
+        <p>
+          Auf nationaler Ebene ist Ajax besonders dominant. Der Verein ist
+          Rekordmeister der Niederlande und hat die Eredivisie über 35-mal
+          gewonnen, häufiger als jeder andere niederländische Klub. Diese
+          Meisterschaften verteilen sich über viele Jahrzehnte und zeigen, dass
+          Ajax nicht nur kurzfristige Erfolge hatte, sondern dauerhaft zur
+          Spitze des niederländischen Fußballs gehört. Zusätzlich gewann Ajax
+          den KNVB-Pokal (den niederländischen Pokalwettbewerb) mehr als 20-mal.
+          Auch den niederländischen Supercup konnte der Verein mehrfach für sich
+          entscheiden. Diese nationalen Titel unterstreichen die
+          Vormachtstellung von Ajax im eigenen Land.
+        </p>
+        <p>
+          Auch international feierte Ajax große und historisch bedeutende
+          Erfolge. Besonders herausragend sind die Siege im Europapokal der
+          Landesmeister, der heute als UEFA Champions League bekannt ist. Ajax
+          gewann diesen prestigeträchtigen Wettbewerb dreimal in Folge von 1971
+          bis 1973, was nur wenigen Vereinen gelungen ist. In dieser Zeit galt
+          Ajax als die beste Mannschaft Europas und prägte den modernen Fußball
+          maßgeblich. Ein weiterer Höhepunkt folgte 1995, als Ajax mit einer
+          sehr jungen Mannschaft erneut die Champions League gewann. Dieser
+          Triumph machte den Verein erneut weltweit bekannt.
+        </p>
+        <p>
+          Darüber hinaus gewann Ajax 1992 den UEFA-Pokal, einen der wichtigsten
+          europäischen Vereinswettbewerbe. Zusätzlich konnte der Verein zweimal
+          den UEFA Super Cup (1972 und 1973) sowie zweimal den Weltpokal (1972
+          und 1995) gewinnen. Mit diesen Titeln bewies Ajax, dass der Klub auch
+          im direkten Vergleich mit den besten Mannschaften anderer Kontinente
+          erfolgreich war.
         </p>
       </section>
+
+      <section>
+        <h2 id="Titel 3">Aktuelle Mannschaft</h2>
+        <p>
+          Ajax Amsterdam befindet sich aktuell in einer Phase des sportlichen und strukturellen Umbruchs. Nach wechselhaften Spielzeiten arbeitet der Klub daran, wieder an frühere nationale und internationale Erfolge anzuknüpfen. Dabei bleibt Ajax seiner traditionellen Philosophie treu: attraktiver Offensivfußball, mutiges Pressing und eine zentrale Rolle für junge Spieler aus der eigenen Jugendakademie.
+        </p>
+        <p>
+          Torhüter
+Im Tor stehen mehrere starke Keeper bereit:
+Vítězslav Jaroš ein junger Tscheche, der für frischen Wind sorgt.
+Remko Pasveer erfahrener niederländischer Torhüter, der mit seiner Ruhe und Übersicht überzeugt.
+Jay Gorter und Charlie Setford gehören ebenfalls zum Torwart-Team und bieten Tiefe im Kader.
+        </p>
+        <p>
+          Abwehr
+Die Verteidigung besteht aus einer soliden Mischung internationaler Spieler und eigenem Nachwuchs:
+Anton Gaaei, Owen Wijndal, Ko Itakura und Josip Šutalo bilden den Kern der Abwehrreihe.
+Lucas Rosa und Youri Baas zeigen starke Leistungen und helfen dabei, die Defensive stabil zu halten.
+        </p>
+        <p>
+          Mittelfeld
+Im Mittelfeld vereint Ajax Kreativität, Erfahrung und Dynamik:
+Kenneth Taylor ist eine zentrale Figur im Spielaufbau und zählt zu den Leistungsträgern im Team.
+Wikipedia
+Davy Klaassen bringt viel Erfahrung mit und kann das Team als Führungsspieler auf dem Platz leiten.
+Wikipedia
+Ebenso gehören Branco van den Boomen, Kian Fitz-Jim, Jorthy Mokio und Youri Regeer zur Mittelfeldbesetzung und sorgen für Variabilität im Spiel.
+        </p>
+        <p>
+          Angriff
+          Im Angriff zeigt Ajax mit mehreren offensiven Spielern seine Offensivkraft:
+Kasper Dolberg und Wout Weghorst bringen Erfahrung und Torjägerqualitäten mit.
+Wikipedia
+Mika Godts und Oliver Edvardsen sind junge Talente, die immer wieder für Torgefahr sorgen können.
+Wikipedia
+Raúl Moro, Steven Berghuis und weitere Offensivspieler wie Bertrand Traoré verstärken die Angriffslinie und machen Ajax zu einem unberechenbaren Gegner.
+        </p>
+        <p>
+          <a href="./unterseiten/hobbies.html">Aktueller Kader</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="Titel 4">Das Stadion von AJAX Amsterdam</h2>
+        <p>
+          Das Stadion von Ajax Amsterdam, offiziell bekannt als Johan-Cruyff-Arena,
+          ist eines der modernsten und bekanntesten Fußballstadien in den
+          Niederlanden. Es befindet sich im Stadtteil Amsterdam-Zuidoost und
+          wurde ursprünglich 1996 eröffnet. Das Stadion wurde nach dem
+          legendären niederländischen Fußballer Johan Cruyff benannt, der als
+          einer der größten Spieler und Trainer in der Geschichte des Fußballs
+          gilt.
+        </p>
+        <p>
+          Die Johan-Cruyff-Arena hat eine Kapazität von etwa 55.000 Zuschauern
+          und ist damit das größte Stadion in den Niederlanden. Es zeichnet sich
+          durch seine moderne Architektur und Ausstattung aus, die sowohl für
+          Spieler als auch für Fans ein erstklassiges Erlebnis bietet. Das
+          Stadion verfügt über ein innovatives Dach, das bei Bedarf geschlossen
+          werden kann, um bei schlechtem Wetter optimale Bedingungen zu
+          gewährleisten.
+        </p>
+        <p>
+          Neben den Heimspielen von Ajax Amsterdam wird die Johan-Cruyff-Arena
+          auch für internationale Spiele, Konzerte und andere Großveranstaltungen
+          genutzt. Das Stadion ist bekannt für seine lebhafte Atmosphäre während
+          der Spiele, die von den leidenschaftlichen Fans von Ajax geschaffen
+          wird.
+        </p>
+      </section>
+
     </main>
 
     <footer>Meine Webseite</footer>
+
   </body>
 </html>
